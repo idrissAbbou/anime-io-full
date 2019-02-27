@@ -1,0 +1,181 @@
+doctype html
+html
+    head
+        title ANIME MA
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        link(rel="stylesheet", href="./css/style.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900")
+    body
+        .navigarion
+            input.navigation__checkbox(type="checkbox" id="nav-checkbox")
+            label.navigation__button(for="nav-checkbox")
+                span.navigation__icon 
+            .navigation__background
+            nav.navigation__nav
+                ul.navigation__list
+                    li.navigation__item
+                        a.navigation__link(href="#") home
+                    li.navigation__item
+                        a.navigation__link(href="#") join the forum
+                    li.navigation__item
+                        a.navigation__link(href="#") purchas items
+                    li.navigation__item
+                        a.navigation__link(href="#") popular choices
+                    li.navigation__item
+                        a.navigation__link(href="#") portail
+        header.header
+            h1.primary-heading
+                span.primary-heading--top animes is awsome
+                span.primary-heading--bottom start watching your favorite animes and play games
+        main
+            .subscribe
+                .row
+                    .col-1-of-2
+                        .sub
+                            h2.tertiary-heading subscribe in our news
+                            form.subscribe__form(action="", method="get")
+                                input.email(type="email" placeholder="example@email.com")
+                                input.submit(type="submit" value="subscribe")
+                    .col-1-of-2
+                        .poster
+                            img.poster__image1.poster__mag(src="./img/mag1.jpg", alt="")
+                            img.poster__image2.poster__mag(src="./img/mag2.jpg", alt="")
+                            img.poster__image3.poster__mag(src="./img/mag3.jpg", alt="")
+            section.startTour
+                h2.heading-secondary.u-text-center trending this week
+                .row
+                    .col-1-of-3 
+                        .card
+                            .card__side.card__side--front
+                                .card__picture.card__picture--1
+                                h1.card__heading.card__heading--1 berserek
+                                .card__details
+                                    ul 
+                                        li 
+                                            span.title state: 
+                                            | uncomplete
+                                        li 
+                                            span.title number of episodes: 
+                                            | 70
+                                        li 
+                                            span.title chapiters: 
+                                            | 445
+                                        li 
+                                            span.title artist: 
+                                            | Kentaro Miura
+                            .card__side.card__side--back.card__side--back--1
+                                .cta
+                                    h3.card__heading-back.u-mg-b-big Manga
+                                    a.btn.btn--white(href="#") read online
+                    .col-1-of-3 
+                        .card
+                            .card__side.card__side--front
+                                .card__picture.card__picture--2
+                                h1.card__heading.card__heading--2 darker than black
+                                .card__details
+                                    ul 
+                                        li 
+                                            span.title state: 
+                                            | uncomplete
+                                        li 
+                                            span.title number of episodes: 
+                                            | 70
+                                        li 
+                                            span.title chapiters: 
+                                            | 445
+                                        li 
+                                            span.title artist: 
+                                            | Hidenobu Kiuchi
+                            .card__side.card__side--back.card__side--back--2
+                                .cta
+                                    h3.card__heading-back.u-mg-b-big see latest episode
+                                    a.btn.btn--white(href="#") watch now
+                    .col-1-of-3 
+                        .card
+                            .card__side.card__side--front
+                                .card__picture.card__picture--3
+                                h1.card__heading.card__heading--3 god of war
+                                .card__details
+                                    ul 
+                                        li
+                                            span.title state: 
+                                            | complete
+                                        li 
+                                            span.title platform: 
+                                            | ps4
+                                        li 
+                                            span.title company: 
+                                            | sonny 
+                            .card__side.card__side--back.card__side--back--3
+                                .cta
+                                    h3.card__heading-back.u-mg-b-big download the lastest version
+                                    a.btn.btn--white(href="#") download
+            section.news
+                .bg-video
+                    video.bg-video__content(autoplay muted loop)
+                        source(src="./img/background.mp4" type="video/mp4")
+                h2.heading-secondary.u-text-center Latest news
+                .row
+                    .story
+                        figure.story__shape
+                            img.story__image(src="./img/naruto.png", alt="")
+                            figcaption.story__caption naruto shippuden
+                        .story__details
+                            h3.fourth-heading new patch for naruto shippuden ultimate ninja stom 4
+                            p.story__description
+                                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam enim veritatis quasi. 
+                                | Vero iusto dolor magni alias ipsam. Obcaecati libero alias culpa dolore aliquid voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni illum ab officiis commodi vero!
+                            .story__read-more
+                                a.btn-text(href="#") read more
+                .row
+                    .story
+                        figure.story__shape
+                            img.story__image(src="./img/csgo.jpg", alt="")
+                            figcaption.story__caption cs:go
+                        .story__details
+                            h3.fourth-heading new free maps on steam
+                            p.story__description Lorem ipsum im veritatis quasi. Vero iusto dolor magni alias ipsam. Obcaecati libero alias culpa dolore aliquid voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni illum ab officiis commodi vero!
+                            .story__read-more    
+                                a.btn-text(href="#") read more
+                .row
+                    .story
+                        figure.story__shape
+                            img.story__image(src="./img/hxh.jpg", alt="")
+                            figcaption.story__caption hunter x hunter
+                        .story__details
+                            h3.fourth-heading new chapiter in the manga
+                            p.story__description
+                                | Lorem ipsum im veritatis quasi. Lorem ipsum dolor sit amet.
+                                | Vero iust olore aliquid voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni illum ab officiis commodi vero!
+                            .story__read-more
+                                a.btn-text(href="#") read more
+            section.registeration
+                .row
+                    .book
+                        .book__form
+                            form.register
+                                h2.heading-secondary.u-mg-b-mid register now for free
+                                .register__group
+                                    input.register__input#name(type="text" placeholder="Full name" required)    
+                                    label.register__label(for="name") Full name
+                                .register__group
+                                    input.register__input#email(type="email" placeholder="Email" required)    
+                                    label.register__label(for="email") Email
+                                .register__group.u-mg-b-mid
+                                    .register__radio-group
+                                        input.register__radio-input(type="radio" name="gender" id="male")
+                                        label.register__radio-label(for="male") 
+                                            | male
+                                            span.register__radio-button
+                                    .register__radio-group
+                                        input.register__radio-input(type="radio" name="gender" id="female")
+                                        label.register__radio-label(for="female") 
+                                            | female
+                                            span.register__radio-button
+                                .register__group
+                                    btn.btn.btn--azure.mobile-full-width sign up now
+
+                    
+
+
+
