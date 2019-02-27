@@ -1,0 +1,22 @@
+.u-text-center {
+    text-align: center !important;
+}
+
+.u-mg-b-big {
+    margin-bottom: 6rem !important;
+
+    @include respond(phone) {
+        margin-bottom: 3rem !important;
+    }
+}
+
+.u-mg-b-mid {
+    margin-bottom: 4rem !important;
+}
+
+.mobile-full-width {
+
+    @include respond(phone) {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,30 @@
+@keyframes bottomToTop {
+    0% {
+        transform: translateY(4rem);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateLinkSmall {
+    0% {
+        transform: skewY(0deg);
+    }
+
+    80% {
+        transform: skewY(4deg);
+    }
+
+    100% {
+        transform: skewY(3deg) scale(1.2);
+        background: rgba($color-yale, .5);
+    }
+}

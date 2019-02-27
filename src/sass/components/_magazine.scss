@@ -1,0 +1,67 @@
+.poster {
+
+    position: relative;
+    height: 40rem;
+
+    @include respond(phone) {
+        height: auto;
+    }
+
+    &__mag {
+        width: 33.33%;
+        opacity: 1;
+        position: relative;
+        box-shadow: 3rem 0rem 2rem rgba($color-dark, .3);
+
+        @include respond(phone) {
+            position: static !important;
+            width: 33.3333% !important;
+            height: auto !important;
+            opacity: 1 !important;
+
+        }
+    }
+
+    &__image1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: auto;
+    }
+
+    &__image2 {
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        opacity: 1;
+        height: 100%;
+        width: auto;
+        transform: scale(1.1) translateY(-1rem);
+    }
+
+    &__image3 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: auto;
+    }
+
+    &__mag:hover {
+        opacity: 1;
+        z-index: 2;
+        transform: translateY(-1rem) scale(1.1);
+        transition: all .3s;
+    }
+
+    &:first-child:hover+&__mag {
+        z-index: 5;
+    }
+
+    &:hover &__mag:not(:hover) {
+        opacity: 0.8;
+        transform: scale(.95);
+    }
+}

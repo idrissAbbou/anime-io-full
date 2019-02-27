@@ -1,0 +1,61 @@
+.subscribe {
+    padding: 6rem;
+
+    @include respond(phone) {
+        width: 100%;
+        padding: 2rem 4rem;
+    }
+
+    .sub {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 40rem;
+
+        @include respond(phone) {
+            height: auto;
+        }
+    }
+
+    &__form {
+
+        @include respond(phone) {
+            text-align: center;
+        }
+
+        input {
+            padding: 1rem;
+            font-size: 2rem;
+            border: none;
+            border-bottom: 3px solid $color-olmpic;
+
+            @include respond(phone) {
+                width: 100%;
+            }
+        }
+
+        .email:focus {
+            outline: none;
+        }
+
+        .submit {
+            background: $color-olmpic;
+            color: $color-white;
+            text-transform: uppercase;
+            font-weight: 700;
+
+            &:hover {
+                transform: translateY(-.2rem);
+                box-shadow: 0rem .5rem 2rem rgba($color-dark, .5);
+            }
+
+            &:active {
+                transform: translateY(-.1rem);
+                box-shadow: 0rem .4rem 2rem rgba($color-dark, .5);
+
+            }
+        }
+
+    }
+}
